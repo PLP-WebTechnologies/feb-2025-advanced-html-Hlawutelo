@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to HTML5 Features Demo</h1>
+    </header>
+    <section>
+            <h2>List with Roman Numerals</h2>
+            <ol type="I">
+                <li>First Roman Item</li>
+                <li>Second Roman Item</li>
+                <li>Third Roman Item</li>
+            </ol>
+    </section>
+    <section>
+        <h2>Image from pexels.com</h2>
+        <img src="pexels-muhammed-ensar-157456120-10725897.jpg" alt="Example Image" width="300">
+    </section>
+       <section>
+        <h2>Contact List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Kenya</td>
+                    <td>123-456-7890</td>
+                    <td>meme.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Los Angeles</td>
+                    <td>987-654-3210</td>
+                    <td>jane.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>South Africa</td>
+                    <td>555-123-4567</td>
+                    <td>mic.brown@example.com</td>
+                </tr>
+                <tr>
+                    <td>Davis</td>
+                    <td>Houston</td>
+                    <td>444-987-6543</td>
+                    <td>emily.davis@example.com</td>
+                </tr>
+                <tr>
+                    <td>Johnson</td>
+                    <td>Miami</td>
+                    <td> 333-456-7890</td>
+                    <td>william.johnson@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="/register" method="post">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+    
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+    
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+    
+            <!-- Dropdown Field -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="">South Africa</option>
+                <option value="canada">Los Angeles</option>
+                <option value="uk">Miami</option>
+                <option value="australia">Houston</option>
+                <option value="australia">Kenya</option>
+            </select><br><br>
+    
+            <!-- Radio Buttons -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+    
+            <!-- Checkboxes -->
+            <p>Hobbies:</p>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label><br><br>
+    
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Multimedia</h2>
+        <h3>YouTube Video</h3>
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/2O8pkybH6po?si=iXhAPaGHNkHe6VLV" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="OLESENG - Track 02.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Advanced HTML5 Elements and Forms</p>
+    </footer>
+</body>
+</html>
